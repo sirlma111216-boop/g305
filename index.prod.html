@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"/>
+<title>자극과 반응 · 중3 과학 학습</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet"/>
+
+<link rel="stylesheet" href="css/app.css"/>
+<link rel="stylesheet" href="css/components.css"/>
+
+<!-- code-referenced image resources (inlined when bundled) -->
+<meta name="ext-resource-dependency" content="img/eye.jpg" data-resource-id="eye"/>
+<meta name="ext-resource-dependency" content="img/ear.jpg" data-resource-id="ear"/>
+<meta name="ext-resource-dependency" content="img/skin.jpg" data-resource-id="skin"/>
+<meta name="ext-resource-dependency" content="img/tongue.jpg" data-resource-id="tongue"/>
+<meta name="ext-resource-dependency" content="img/nose.jpg" data-resource-id="nose"/>
+<meta name="ext-resource-dependency" content="img/neuron.jpg" data-resource-id="neuron"/>
+<meta name="ext-resource-dependency" content="img/neuron-types.jpg" data-resource-id="neuronTypes"/>
+<meta name="ext-resource-dependency" content="img/brain.jpg" data-resource-id="brain"/>
+<meta name="ext-resource-dependency" content="img/eye-adjust.jpg" data-resource-id="eyeAdjust"/>
+<meta name="ext-resource-dependency" content="img/eye-distance.jpg" data-resource-id="eyeDistance"/>
+<meta name="ext-resource-dependency" content="img/nervous-tree.jpg" data-resource-id="nervousTree"/>
+<script>
+  // resolve to bundled blob URL when standalone, else fall back to the file path
+  window.__res = function(id, path){ return (window.__resources && window.__resources[id]) || path; };
+</script>
+</head>
+<body>
+<div id="root"></div>
+
+<!-- vendored React (production) — no external CDN, no Babel -->
+<script src="vendor/react.production.min.js"></script>
+<script src="vendor/react-dom.production.min.js"></script>
+
+<!-- precompiled application bundle (JSX already transformed) -->
+<script src="vendor/app.bundle.js"></script>
+
+<template id="__bundler_thumbnail">
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<rect width="100" height="100" fill="#FFF4EE"/>
+<circle cx="50" cy="50" r="9" fill="none" stroke="#FFD9CC" stroke-width="4"/>
+<path d="M50 41 a9 9 0 0 1 9 9" fill="none" stroke="#FF6F61" stroke-width="4" stroke-linecap="round">
+<animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="0.9s" repeatCount="indefinite"/>
+</path>
+</svg>
+</template>
+</body>
+</html>
